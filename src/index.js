@@ -11,5 +11,10 @@ for (let i = 0; i < dropdownheaders.length; i++) {
 
 
 
-const aboutcut = document.querySelector('.aboutcut');
+const aboutcut = document.querySelector(".aboutcut");
 aboutcut.onclick = document.getElementById("about").scrollIntoView;
+
+const returntotop = document.querySelector(".returntotop");
+returntotop.addEventListener('click', () =>{
+    document.getElementById("introduction").scrollIntoView();
+})

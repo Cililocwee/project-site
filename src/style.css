@@ -1,74 +1,151 @@
+:root {
+    --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+    --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+    --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+    --omrs-color-interaction: #1e4bd1;
+    --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+    --omrs-color-danger: #b50706;
+    --omrs-color-bg-low-contrast: #eff1f2;
+    --omrs-color-ink-high-contrast: #121212;
+    --omrs-color-bg-high-contrast: #ffffff;
+    --shadow-default: text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    --tab-inner-color: gray;
+}
+
+html,
+body {
+    width: auto;
+    height: auto;
+}
+
+body {
+    /* background-image: url("./background.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.backgroundimage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .content {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .container {
+
+}
+
+.container {
     width: 600px;
-    background: beige;
     padding: 10px 20px;
-    border: 1px solid black;
     margin-bottom: 25px;
     border-radius: 10px;
-  }
-  
-  .introduction {
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.introduction {
     display: flex;
     justify-content: space-evenly;
-  }
-  
-  .introblurb {
+}
+
+@media all and (max-width: 768px) {
+    .introduction {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.introblurb {
     text-align: center;
     margin: auto;
-  }
-  
-  .portrait {
+}
+
+.portrait {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     border: 1px solid black;
-    background: lightgray;background-image: url("portrait.jpeg");
+    background: lightgray;
+    background-image: url("portrait.jpeg");
     background-position: center;
     background-size: contain;
-  }
-  
-  .tabcontainer {
+}
+
+
+
+.tabcontainer {
     display: flex;
     justify-content: space-evenly;
-  }
-  
-  .contenttab {
+}
+
+.contenttab {
     width: auto;
-    background: lightblue;
+    background: var(--tab-inner-color);
     padding: 10px 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
     border: 1px solid black;
-  }
-  
-  .dropdown {
+}
+
+@media all and (max-width: 768px) {
+    .contenttab {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+
+.dropdown {
     width: 80%;
-    background: lightblue;
-    padding: 5px;
+    background: var(--tab-inner-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
     border: 1px solid black;
-  }
-  
-  .dropdownheader {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownheader {
     font-weight: bold;
-  }
-  
-  .dropdownblurb {
+    padding: 5px;
+}
+
+.dropdownblurb {
     text-align: left;
     padding: 0 10px;
-  }
-  
-  .hidden {
+    background-color: lightgray;
+}
+
+.hidden {
     display: none;
-  }
+}
+
+.returntotop {
+    border: 1px solid black;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: var(--tab-inner-color);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
