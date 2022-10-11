@@ -28,7 +28,9 @@
     height: 200px;
     border-radius: 100%;
     border: 1px solid black;
-    background: lightgray;
+    background: lightgray;background-image: url("portrait.jpeg");
+    background-position: center;
+    background-size: contain;
   }
   
   .tabcontainer {
