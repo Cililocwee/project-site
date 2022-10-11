@@ -32,6 +32,15 @@ body {
     width: 100%;
 }
 
+@media all and (max-width: 768px) {
+    .backgroundimage {
+        width: auto;
+        top: -400px;
+        left: -400px;
+        /* height: 100%; */
+    }
+}
+
 .content {
     margin-top: 50px;
     display: flex;
