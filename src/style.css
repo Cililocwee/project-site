@@ -1,0 +1,72 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    width: 600px;
+    background: beige;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .introduction {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .introblurb {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid black;
+    background: lightgray;
+  }
+  
+  .tabcontainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contenttab {
+    width: auto;
+    background: lightblue;
+    padding: 10px 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1px solid black;
+  }
+  
+  .dropdown {
+    width: 80%;
+    background: lightblue;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1px solid black;
+  }
+  
+  .dropdownheader {
+    font-weight: bold;
+  }
+  
+  .dropdownblurb {
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
