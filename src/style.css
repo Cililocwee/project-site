@@ -113,6 +113,14 @@ body {
     margin-right: auto;
     margin-bottom: 5px;
     border: 1px solid black;
+    /* Safari */
+    -webkit-user-select: none;
+    /* Firefox */
+    -moz-user-select: none;
+    /* IE10+/Edge */
+    -ms-user-select: none;
+    /* Standard */
+    user-select: none;
 }
 
 @media all and (max-width: 768px) {
@@ -137,6 +145,14 @@ body {
 .dropdownheader {
     font-weight: bold;
     padding: 5px;
+    /* Safari */
+    -webkit-user-select: none;
+    /* Firefox */
+    -moz-user-select: none;
+    /* IE10+/Edge */
+    -ms-user-select: none;
+    /* Standard */
+    user-select: none;
 }
 
 .dropdownblurb {
@@ -157,4 +173,12 @@ body {
     background: var(--tab-inner-color);
     padding: 2px 5px;
     border-radius: 5px;
+    /* Safari */
+    -webkit-user-select: none;
+    /* Firefox */
+    -moz-user-select: none;
+    /* IE10+/Edge */
+    -ms-user-select: none;
+    /* Standard */
+    user-select: none;
 }
