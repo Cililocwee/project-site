@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
 :root {
     --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
     --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
@@ -19,10 +21,17 @@ body {
 }
 
 body {
-    /* background-image: url("./background.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat; */
+    font-family: "Spartan";
+    color: #2A293E; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkslategray;
 }
 
 .backgroundimage {
@@ -97,7 +106,10 @@ body {
     background-size: contain;
 }
 
-
+.logo {
+    width: 30px;
+    height: auto;
+}
 
 .tabcontainer {
     display: flex;
@@ -161,6 +173,42 @@ body {
     background-color: lightgray;
 }
 
+.projectlist {
+    text-decoration: none;
+}
+
+.projectbox {
+    background: gray;
+    border: 2px solid black;
+    padding: 10px;
+    color: rgb(69, 69, 69);
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.projectbox:visited {
+    color: white;
+}
+
+.projectbox:hover {
+    background-color: darkgray;
+}
+
+.projectbox a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+    border-right: 1px solid darkgray;
+}
+
+.projectblurb {
+    width: 70%;
+    margin-left: auto;
+}
+
 .hidden {
     display: none;
 }
@@ -181,4 +229,96 @@ body {
     -ms-user-select: none;
     /* Standard */
     user-select: none;
+}
+
+.contact-me {
+    background: #f8f4e5;
+    padding: 50px 100px;
+    border-top: 10px solid #f45702;
+}
+
+.contact-me label,
+.contact-me input,
+.contact-me textarea {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+    font-family: "Spartan";
+}
+
+.contact-me input {
+    margin-bottom: 24pt;
+}
+
+.contact-me h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 24pt;
+    font-style: italic;
+    margin: 0 0 .5em 0;
+}
+
+.contact-me span {
+    font-size: 8pt;
+}
+
+.contact-me em {
+    color: #f45702;
+    font-weight: bold;
+}
+
+.contact-me input,
+.contact-me textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: #f8f4e5;
+    padding-left: 5px;
+    outline: none;
+}
+
+.contact-me input:focus,
+.contact-me textarea:focus {
+    border: 1px solid #6bd4b1;
+}
+
+.contact-me textarea {
+    resize: none;
+}
+
+.contact-me button {
+    display: block;
+    float: right;
+    line-height: 24pt;
+    padding: 0 20px;
+    border: none;
+    background: #f45702;
+    color: white;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+}
+
+.contact-me button:hover {
+    background: inherit;
+    color: #f45702;
+    border-bottom: 2px solid #f45702;
+}
+
+.contact-me ::selection {
+    background: #ffc7b8;
+}
+
+.contact-me input:-webkit-autofill,
+.contact-me input:-webkit-autofill:hover,
+.contact-me input:-webkit-autofill:focus,
+.contact-me textarea:-webkit-autofill,
+.contact-me textarea:-webkit-autofill:hover,
+.contact-me textarea:-webkit-autofill:focus {
+    border: 1px solid #6bd4b1;
+    -webkit-text-fill-color: #2A293E;
+    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
