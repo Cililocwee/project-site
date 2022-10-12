@@ -1,4 +1,6 @@
 import css from "./style.css"
+import githublogo from "./github.svg"
+import linkedinlogo from "./linkedin.svg"
 
 const dropdownheaders = document.querySelectorAll('.dropdownheader');
 
