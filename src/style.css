@@ -101,9 +101,19 @@ a:visited {
     border-radius: 100%;
     border: 1px solid black;
     background: lightgray;
-    background-image: url("portrait.jpeg");
-    background-position: center;
-    background-size: contain;
+    overflow: hidden;
+}
+
+.portrait img {
+    height: inherit;
+    width: auto;
+    border-radius: 100%;
+    transition: scale .75s;
+}
+
+.portrait img:hover {
+    scale: 1.2;
+
 }
 
 .logo {

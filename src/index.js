@@ -15,25 +15,25 @@ for (let i = 0; i < dropdownheaders.length; i++) {
 
 const aboutcut = document.querySelector(".aboutcut");
 aboutcut.addEventListener('click', () =>{
-    document.getElementById("about").scrollIntoView();
+    document.getElementById("about").scrollIntoView({ behavior: 'smooth'});
 })
 
 const skillscut = document.querySelector(".skillscut");
 skillscut.addEventListener('click', () =>{
-    document.getElementById("skills").scrollIntoView();
+    document.getElementById("skills").scrollIntoView({ behavior: 'smooth'});
 })
 
 const projectscut = document.querySelector(".projectscut");
 projectscut.addEventListener('click', () =>{
-    document.getElementById("projects").scrollIntoView();
+    document.getElementById("projects").scrollIntoView({ behavior: 'smooth'});
 })
 
 const contactcut = document.querySelector(".contactcut");
 contactcut.addEventListener('click', () =>{
-    document.getElementById("contact").scrollIntoView();
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth'});
 })
 
 const returntotop = document.querySelector(".returntotop");
 returntotop.addEventListener('click', () =>{
-    document.getElementById("introduction").scrollIntoView();
+    document.getElementById("introduction").scrollIntoView({ behavior: 'smooth'});
 })
