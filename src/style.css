@@ -96,14 +96,22 @@ a:visited {
 }
 
 .portrait {
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 150px;
     border-radius: 100%;
     border: 1px solid black;
     background: lightgray;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 
+@media all and (max-width: 768px){
+    .portrait {
+        width: 200px;
+        height: 200px;
+    }
+}
 .portrait img {
     height: inherit;
     width: auto;
@@ -162,6 +170,12 @@ a:visited {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+}
+
+@media all and (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+    }
 }
 
 .dropdownheader {
@@ -245,6 +259,12 @@ a:visited {
     background: #f8f4e5;
     padding: 50px 100px;
     border-top: 10px solid #f45702;
+}
+
+@media all and (max-width: 768px) {
+    .contact-me {
+        padding: 10px 20px;
+    }
 }
 
 .contact-me label,
