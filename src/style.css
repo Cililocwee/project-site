@@ -1,17 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
 :root {
-    --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
-    --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
-    --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
-    --omrs-color-interaction: #1e4bd1;
-    --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
-    --omrs-color-danger: #b50706;
-    --omrs-color-bg-low-contrast: #eff1f2;
-    --omrs-color-ink-high-contrast: #121212;
-    --omrs-color-bg-high-contrast: #ffffff;
     --shadow-default: text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    --tab-inner-color: gray;
+
+    /* Main Colors */
+    --primary: #6200ee;
+    --primary-variant: #3700b3;
+    --secondary: #03dac6;
+    --secondary-variant: #018786;
+    /* Backgrounds */
+    --background: #ffffff;
+    --surface: #EEEEEE;
+    --error: #c51162;
+    /* Font */
+    --font-on-primary: #ffffff;
+    --font-on-secondary: #000000;
+    --font-on-background: #000000;
+    --font-on-surface: #000000;
+    --font-on-error: #ffffff;
+
+
 }
 
 html,
@@ -22,32 +30,16 @@ body {
 
 body {
     font-family: "Spartan";
-    color: #2A293E;
+    color: var(--font-on-surface);
 }
 
 a {
-    color: black;
+    color: var(--font-on-surface);
     text-decoration: none;
 }
 
 a:visited {
     color: darkslategray;
-}
-
-.backgroundimage {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-@media all and (max-width: 768px) {
-    .backgroundimage {
-        width: auto;
-        top: -400px;
-        left: -400px;
-        /* height: 100%; */
-    }
 }
 
 .content {
@@ -63,12 +55,12 @@ a:visited {
     padding: 10px 20px;
     margin-bottom: 25px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.11);
+    background: var(--surface);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 18%);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
-    border: 1px solid rgba(255, 255, 255, 0.43);
+    /* border: 1px solid rgba(255, 255, 255, 0.43); */
 }
 
 @media all and (max-width: 768px) {
@@ -100,8 +92,7 @@ a:visited {
     width: 225px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid black;
-    background: lightgray;
+    border: 2px solid var(--primary);
     overflow: hidden;
     display: flex;
     justify-content: space-around;
@@ -133,6 +124,12 @@ a:visited {
     margin: auto 10px;
 }
 
+.skillslogo {
+    width: 50px;
+    height: auto;
+    margin: auto 10px;
+}
+
 
 .logodivbottom {
     display: none;
@@ -156,13 +153,13 @@ a:visited {
 
 .contenttab {
     width: auto;
-    background: var(--tab-inner-color);
+    background: var(--secondary);
     padding: 10px 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* Safari */
     -webkit-user-select: none;
     /* Firefox */
@@ -182,12 +179,12 @@ a:visited {
 
 .dropdown {
     width: 80%;
-    background: var(--tab-inner-color);
+    background: var(--secondary);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
 }
@@ -214,7 +211,7 @@ a:visited {
 .dropdownblurb {
     text-align: left;
     padding: 0 10px;
-    background-color: lightgray;
+    background-color: var(--secondary-variant);
 }
 
 .projectlist {
@@ -241,12 +238,14 @@ a:visited {
 }
 
 .projectbox {
-    background: gray;
-    border: 2px solid black;
+    background: var(--secondary);
+    /* border: 2px solid var(--secondary-variant); */
+    border-radius: 5px;
     padding: 10px;
     color: rgb(69, 69, 69);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
+    transition: .5s;
 }
 
 .projectbox:visited {
@@ -254,7 +253,8 @@ a:visited {
 }
 
 .projectbox:hover {
-    background-color: darkgray;
+    background-color: var(--secondary-variant);
+    color: var(--font-on-secondary);
 }
 
 .projectbox a {
@@ -281,7 +281,7 @@ a:visited {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    background: var(--tab-inner-color);
+    background: var(--secondary);
     padding: 2px 5px;
     border-radius: 5px;
     /* Safari */
@@ -295,9 +295,9 @@ a:visited {
 }
 
 .contact-me {
-    background: #f8f4e5;
+    background: var(--surface);
     padding: 50px 100px;
-    border-top: 10px solid #f45702;
+    border-top: 10px solid var(--primary);
 }
 
 @media all and (max-width: 768px) {
@@ -305,7 +305,7 @@ a:visited {
         padding: 10px 20px 50px;
     }
 
-    h3{
+    .contact me h3{
         display: none;
     }
 
@@ -343,7 +343,7 @@ a:visited {
 }
 
 .contact-me em {
-    color: #f45702;
+    color: var(--secondary);
     font-weight: bold;
 }
 
@@ -372,8 +372,8 @@ a:visited {
     line-height: 24pt;
     padding: 0 20px;
     border: none;
-    background: #f45702;
-    color: white;
+    background: var(--secondary);
+    color: var(--font-on-secondary);
     letter-spacing: 2px;
     transition: .2s all ease-in-out;
     border-bottom: 2px solid transparent;
@@ -382,8 +382,8 @@ a:visited {
 
 .contact-me button:hover {
     background: inherit;
-    color: #f45702;
-    border-bottom: 2px solid #f45702;
+    color: var(--secondary-variant);
+    border-bottom: 2px solid var(--secondary-variant);
 }
 
 .contact-me ::selection {

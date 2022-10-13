@@ -1,6 +1,11 @@
 import css from "./style.css"
 import githublogo from "./github.svg"
 import linkedinlogo from "./linkedin.svg"
+import background from "./background2.jpg"
+import htmllogo from "./HTML5.svg"
+import jslogo from "./javascript.svg"
+import pythonlogo from "./python.svg"
+import nodejs from "./node-js.svg"
 
 const dropdownheaders = document.querySelectorAll('.dropdownheader');
 
@@ -9,8 +14,6 @@ for (let i = 0; i < dropdownheaders.length; i++) {
     dropdownheaders[i].nextElementSibling.classList.toggle('hidden');
   })
 }
-
-
 
 
 const aboutcut = document.querySelector(".aboutcut");
