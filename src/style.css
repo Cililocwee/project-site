@@ -124,6 +124,19 @@ a:visited {
     margin: auto 10px;
 }
 
+.contactlogo {
+    width: 50px;
+    height: auto;
+    margin: auto 10px;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .skillslogo {
     width: 30px;
     height: auto;
