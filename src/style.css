@@ -4,17 +4,16 @@
     --shadow-default: text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
     /* Main Colors */
-    --primary: #6200ee;
-    --primary-variant: #3700b3;
-    --secondary: #03dac6;
-    --secondary-variant: #018786;
+    --primary: #03dac6;
+    --primary-light: #b4fef6;
+
     /* Backgrounds */
     --background: #ffffff;
     --surface: #EEEEEE;
     --error: #c51162;
+
     /* Font */
-    --font-on-primary: #ffffff;
-    --font-on-secondary: #000000;
+    --font-on-primary: #000000;
     --font-on-background: #000000;
     --font-on-surface: #000000;
     --font-on-error: #ffffff;
@@ -43,24 +42,24 @@ a:visited {
 }
 
 .content {
-    margin-top: 50px;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8rem;
+    padding-bottom: 8rem;
 
 }
 
 .container {
     width: 600px;
-    padding: 10px 20px;
-    margin-bottom: 35px;
+    padding: 20px;
     border-radius: 10px;
     background: var(--surface);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgb(0 0 0 / 18%);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
-    /* border: 1px solid rgba(255, 255, 255, 0.43); */
 }
 
 @media all and (max-width: 768px) {
@@ -92,7 +91,7 @@ a:visited {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary-light);
     overflow: hidden;
     display: flex;
     justify-content: space-around;
@@ -172,13 +171,13 @@ a:visited {
 
 .contenttab {
     width: auto;
-    background: var(--secondary);
+    background: var(--primary);
     padding: 10px 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    /* border: 1px solid black; */
+
     /* Safari */
     -webkit-user-select: none;
     /* Firefox */
@@ -198,12 +197,11 @@ a:visited {
 
 .dropdown {
     width: 80%;
-    background: var(--secondary);
+    background: var(--primary);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -231,7 +229,7 @@ a:visited {
 .dropdownblurb {
     text-align: left;
     padding: 0 10px;
-    background-color: var(--secondary-variant);
+    background-color: var(--primary-light);
     padding-bottom: 10px;
 }
 
@@ -244,7 +242,7 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid var(--primary);
+    border-right: 1px solid var(--primary-light);
     width: 28%;
     gap: 5px;
 }
@@ -272,8 +270,7 @@ a:visited {
 }
 
 .projectbox {
-    background: var(--secondary);
-    /* border: 2px solid var(--secondary-variant); */
+    background: var(--primary);
     border-radius: 5px;
     padding: 10px;
     color: var(--font-on-secondary);
@@ -287,7 +284,7 @@ a:visited {
 }
 
 .projectbox:hover {
-    background-color: var(--secondary-variant);
+    background-color: var(--primary-light);
     color: var(--font-on-secondary);
 }
 
@@ -298,7 +295,6 @@ a:visited {
     align-items: center;
     width: 30%;
     margin-right: 10px;
-    /* border-right: 1px solid var(--primary); */
 }
 
 .projectblurb {
@@ -311,12 +307,11 @@ a:visited {
 }
 
 .returntotop {
-    border: 2px solid var(--primary);
     position: fixed;
     bottom: 10px;
     left: 10px;
-    background: var(--secondary);
-    padding: 2px 5px;
+    background: var(--primary);
+    padding: 10px 15px;
     border-radius: 5px;
     /* Safari */
     -webkit-user-select: none;
@@ -331,7 +326,7 @@ a:visited {
 .contact-me {
     background: var(--surface);
     padding: 50px 100px;
-    border-top: 10px solid var(--primary);
+    border-top: 10px solid var(--primary-light);
 }
 
 @media all and (max-width: 768px) {
@@ -377,7 +372,7 @@ a:visited {
 }
 
 .contact-me em {
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -406,7 +401,7 @@ a:visited {
     line-height: 24pt;
     padding: 0 20px;
     border: none;
-    background: var(--secondary);
+    background: var(--primary);
     color: var(--font-on-secondary);
     letter-spacing: 2px;
     transition: .2s all ease-in-out;
@@ -416,8 +411,8 @@ a:visited {
 
 .contact-me button:hover {
     background: inherit;
-    color: var(--secondary-variant);
-    border-bottom: 2px solid var(--secondary-variant);
+    color: var(--primary-light);
+    border-bottom: 2px solid var(--primary-light);
 }
 
 .contact-me ::selection {
