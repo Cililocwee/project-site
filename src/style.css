@@ -246,15 +246,17 @@ a:visited {
     width: 28%;
     gap: 5px;
 }
-.projectleft a{
+
+.projectleft a {
     margin: auto;
     font-size: .85em;
 }
+
 .projectlistsmalldevice {
     display: none;
 }
 
-.projectlistsmalldevicelinks{
+.projectlistsmalldevicelinks {
     display: flex;
     justify-content: center;
 }
@@ -334,7 +336,7 @@ a:visited {
         padding: 10px 20px 50px;
     }
 
-    .contact me h3{
+    .contact me h3 {
         display: none;
     }
 
@@ -429,4 +431,14 @@ a:visited {
     -webkit-text-fill-color: #2A293E;
     -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
     transition: background-color 5000s ease-in-out 0s;
+}
+
+footer {
+    font-size: .8em;
+    text-align: center;
+    position: initial;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
 }
