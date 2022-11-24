@@ -427,6 +427,14 @@ footer {
   background-image: url(../dist/assets/signup.jpeg);
 }
 
+#projectalpha {
+  background-image: url(../dist/assets/resumesite.jpeg);
+}
+
+#projectbeta {
+  background-image: url(../dist/assets/pokemongame.jpeg);
+}
+
 .linkbuttons {
   display: flex;
   justify-content: space-around;
