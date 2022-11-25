@@ -1,5 +1,6 @@
 import css from "./style.css";
 import projectMenu from "./project-menu/projectMenu";
+import setupProjects from "./project-menu/projectSetup";
 
 const dropdownheaders = document.querySelectorAll(".dropdownheader");
 
@@ -38,3 +39,6 @@ returntotop.addEventListener("click", () => {
 
 const intro = document.querySelector(".content");
 intro.appendChild(projectMenu.container);
+
+// ** Sets up the project section
+setupProjects();

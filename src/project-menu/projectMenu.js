@@ -71,8 +71,6 @@ const projectMenu = (function () {
   mainImage.append(imageAlpha);
   container.append(mainImage, buttonContainer, previews);
 
-  // functionality
-  const current = document.querySelector("#current");
   // previews
   const imgs = previews.childNodes;
 
@@ -103,8 +101,6 @@ const projectMenu = (function () {
       image.setAttribute("style", "opacity:0.6");
     }
   }
-
-  // adding buttons for image change
 
   // selections
   leftBtn.addEventListener("click", leftScroll);
