@@ -5,6 +5,7 @@ const projectMenu = (function () {
   const container = document.createElement("div");
   container.classList.add("container");
   container.classList.add("project-list");
+  // container.classList.add("hidden");
 
   const projectHeader = document.createElement("h1");
   projectHeader.innerText = "Projects";
@@ -16,7 +17,7 @@ const projectMenu = (function () {
   mainImage.classList.add("main-img");
 
   const imageAlpha = document.createElement("img");
-  imageAlpha.src = "../../dist/assets/pokemongame.jpeg";
+  imageAlpha.src = "/src/project-section/assets/pokemongame.jpeg";
   imageAlpha.id = "current";
   imageAlpha.alt = "main image";
 
@@ -40,23 +41,23 @@ const projectMenu = (function () {
   previews.id = "sub-imgs";
 
   const previewAlpha = document.createElement("img");
-  previewAlpha.src = "../../dist/assets/pokemongame.jpeg";
+  previewAlpha.src = "/src/project-section/assets/pokemongame.jpeg";
   previewAlpha.classList.add("preview-image");
 
   const previewBeta = document.createElement("img");
-  previewBeta.src = "../../dist/assets/weather.jpg";
+  previewBeta.src = "/src/project-section/assets/weather.jpg";
   previewBeta.classList.add("preview-image");
 
   const previewGamma = document.createElement("img");
-  previewGamma.src = "../../dist/assets/todo.jpeg";
+  previewGamma.src = "/src/project-section/assets/todo.jpeg";
   previewGamma.classList.add("preview-image");
 
   const previewDelta = document.createElement("img");
-  previewDelta.src = "../../dist/assets/signup.jpg";
+  previewDelta.src = "/src/project-section/assets/signup.jpg";
   previewDelta.classList.add("preview-image");
 
   const previewEpsilon = document.createElement("img");
-  previewEpsilon.src = "../../dist/assets/resumesite.jpeg";
+  previewEpsilon.src = "/src/project-section/assets/resumesite.jpeg";
   previewEpsilon.classList.add("preview-image");
 
   previews.append(

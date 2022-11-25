@@ -1,6 +1,7 @@
 import css from "./style.css";
-import projectMenu from "./project-menu/projectMenu";
-import setupProjects from "./project-menu/projectSetup";
+import projectMenu from "./project-section/projectCarousel";
+import setupProjects from "./project-section/projectSetup";
+import setupSkills from "./skills-section/skillSetup";
 
 const dropdownheaders = document.querySelectorAll(".dropdownheader");
 
@@ -39,6 +40,9 @@ returntotop.addEventListener("click", () => {
 
 const intro = document.querySelector(".content");
 intro.appendChild(projectMenu.container);
+
+// ** Sets up the skills section
+setupSkills();
 
 // ** Sets up the project section
 setupProjects();
