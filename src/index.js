@@ -1,36 +1,44 @@
-import css from "./style.css"
+import css from "./style.css";
+import setupProjects from "./project-section/projectSetup";
+import setupSkills from "./skills-section/skillSetup";
 
-
-const dropdownheaders = document.querySelectorAll('.dropdownheader');
+const dropdownheaders = document.querySelectorAll(".dropdownheader");
 
 for (let i = 0; i < dropdownheaders.length; i++) {
-  dropdownheaders[i].addEventListener('click', () =>{
-    dropdownheaders[i].nextElementSibling.classList.toggle('hidden');
-  })
+  dropdownheaders[i].addEventListener("click", () => {
+    dropdownheaders[i].nextElementSibling.classList.toggle("hidden");
+  });
 }
 
-
 const aboutcut = document.querySelector(".aboutcut");
-aboutcut.addEventListener('click', () =>{
-    document.getElementById("about").scrollIntoView({ behavior: 'smooth'});
-})
+aboutcut.addEventListener("click", () => {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});
 
 const skillscut = document.querySelector(".skillscut");
-skillscut.addEventListener('click', () =>{
-    document.getElementById("skills").scrollIntoView({ behavior: 'smooth'});
-})
+skillscut.addEventListener("click", () => {
+  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+});
 
 const projectscut = document.querySelector(".projectscut");
-projectscut.addEventListener('click', () =>{
-    document.getElementById("projects").scrollIntoView({ behavior: 'smooth'});
-})
+projectscut.addEventListener("click", () => {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+});
 
 const contactcut = document.querySelector(".contactcut");
-contactcut.addEventListener('click', () =>{
-    document.getElementById("contact").scrollIntoView({ behavior: 'smooth'});
-})
+contactcut.addEventListener("click", () => {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+});
 
 const returntotop = document.querySelector(".returntotop");
-returntotop.addEventListener('click', () =>{
-    document.getElementById("introduction").scrollIntoView({ behavior: 'smooth'});
-})
+returntotop.addEventListener("click", () => {
+  document
+    .getElementById("introduction")
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+// ** Sets up the skills section
+setupSkills();
+
+// ** Sets up the project section
+setupProjects();

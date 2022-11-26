@@ -124,211 +124,25 @@
         </div>
       </div>
 
+      <!-- Skills are generated with javascript -->
       <div class="skills container" id="skills">
         <h1>Skills</h1>
         <h3>I am confident with:</h3>
-        <div class="skillscategory">
-          <div class="skillsdiv">
-            <img
-              src="./assets/javascript.svg"
-              alt="Javascript logo"
-              class="skillslogo"
-            />
-            Javascript
-          </div>
-          <div class="skillsdiv">
-            <img
-              src="./assets/reactjs.svg"
-              alt="Java logo"
-              class="skillslogo"
-            />
-            ReactJS
-          </div>
-          <div class="skillsdiv">
-            <img src="./assets/HTML5.svg" alt="HTML5 Logo" class="skillslogo" />
-            HTML5
-          </div>
-          <div class="skillsdiv">
-            <img src="./assets/css.svg" alt="CSS Logo" class="skillslogo" />
-            CSS3
-          </div>
-
-          <div class="skillsdiv">
-            <img
-              src="./assets/webpack.svg"
-              alt="Webpack logo"
-              class="skillslogo"
-            />
-            Webpack
-          </div>
-        </div>
+        <div class="skillscategory" id="confident"></div>
         <h3>I am familiar with:</h3>
-        <div class="skillscategory">
-          <div class="skillsdiv">
-            <img
-              src="./assets/node-js.svg"
-              alt="Node JS logo"
-              class="skillslogo"
-            />
-            Node JS
-          </div>
-          <div class="skillsdiv">
-            <img
-              src="./assets/typescript.svg"
-              alt="Typscript logo"
-              class="skillslogo"
-            />
-            Typescript
-          </div>
-          <div class="skillsdiv">
-            <img
-              src="./assets/python.svg"
-              alt="Python logo"
-              class="skillslogo"
-            />
-            Python
-          </div>
-          <div class="skillsdiv">
-            <img
-              src="./assets/django.svg"
-              alt="Django logo"
-              class="skillslogo"
-            />
-            Django
-          </div>
-          <div class="skillsdiv">
-            <img src="./assets/java.svg" alt="Java logo" class="skillslogo" />
-            Java
-          </div>
-        </div>
+        <div class="skillscategory" id="familiar"></div>
         <h3>I would like to develop these skills in the near future:</h3>
-        <div class="skillscategory">
-          <div class="skillsdiv">
-            <img src="./assets/java.svg" alt="Java logo" class="skillslogo" />
-            Java
-          </div>
-          <div class="skillsdiv">
-            <img src="./assets/vue-9.svg" alt="Java logo" class="skillslogo" />
-            Vue
-          </div>
-        </div>
+        <div class="skillscategory" id="future"></div>
       </div>
 
+      <!-- Projects are generated with javascript -->
       <div class="projects container" id="projects">
         <h1>Projects</h1>
-        <div class="projectlist">
-          <div id="projectalpha" class="project">
-            <div class="description">
-              A simple one-page CV generator with editable fields. Made with
-              React.
-              <div class="linkbuttons">
-                <div>
-                  <a href="https://cililocwee.github.io/sign-up-form/">Live</a>
-                </div>
-                <div>
-                  <a href="https://github.com/Cililocwee/sign-up-form/">Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="projectbeta" class="project">
-            <div class="description">
-              A memory game made using React. Don't click the same picture
-              twice!
-              <div class="linkbuttons">
-                <div>
-                  <a href="https://cililocwee.github.io/sign-up-form/">Live</a>
-                </div>
-                <div>
-                  <a href="https://github.com/Cililocwee/sign-up-form/">Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="projecta" class="project">
-            <div class="description">
-              Uses the Openweather API to display releveant weather data based
-              on location.
-
-              <div class="linkbuttons">
-                <div>
-                  <a href="https://cililocwee.github.io/weather-app/">Live</a>
-                </div>
-                <div>
-                  <a href="https://github.com/Cililocwee/weather-app/">Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="projectb" class="project">
-            <div class="description">
-              Stores todo lists locally. Each note can be assigned a different
-              urgency.
-              <div class="linkbuttons">
-                <div>
-                  <a href="https://cililocwee.github.io/to-do-app/">Live</a>
-                </div>
-                <div>
-                  <a href="https://github.com/Cililocwee/to-do-app/">Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="projectc" class="project">
-            <div class="description">
-              A sign-up page for a fictional sect of knights. Uses client-side
-              validation to dynamically format user information.
-              <div class="linkbuttons">
-                <div>
-                  <a href="https://cililocwee.github.io/sign-up-form/">Live</a>
-                </div>
-                <div>
-                  <a href="https://github.com/Cililocwee/sign-up-form/">Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="projectlist" id="projectlist"></div>
       </div>
 
       <div class="contact container" id="contact">
         <h1>Contact</h1>
-        <!-- UNDER CONSTRUCTION -->
-        <div class="contact-me hidden">
-          <form action="#">
-            <label for="inquirername">NAME<em>&#x2a;</em></label>
-            <input
-              id="inquirername"
-              name="inquirername"
-              required=""
-              type="text"
-            />
-
-            <label for="inquireremail">EMAIL<em>&#x2a;</em></label>
-            <input
-              id="inquireremail"
-              name="inquireremail"
-              required=""
-              type="email"
-            />
-
-            <label for="inquirernote">YOUR MESSAGE<em>&#x2a;</em></label>
-            <textarea
-              id="inquirernote"
-              name="inquirernote"
-              required=""
-              rows="4"
-            ></textarea>
-
-            <h3>I sincerely hope to hear from you! Have a wonderful day!</h3>
-
-            <button id="inquirersubmit">SUBMIT</button>
-          </form>
-        </div>
         <p>
           For any work- or project-related inquiries, please contact me through
           my LinkedIn profile:
