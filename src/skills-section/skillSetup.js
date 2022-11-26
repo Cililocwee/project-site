@@ -5,63 +5,63 @@ export default function setupSkills() {
   // src alt label
 
   const javascript = skillCard.cardFactory(
-    "/src/skills-section/assets/javascript.svg",
+    "/dist/icon-assets/javascript.svg",
     "javascript logo",
     "Javascript"
   ).card;
   const reactjs = skillCard.cardFactory(
-    "/src/skills-section/assets/reactjs.svg",
+    "/dist/icon-assets/reactjs.svg",
     "reactjs logo",
     "React"
   ).card;
   const html = skillCard.cardFactory(
-    "/src/skills-section/assets/HTML5.svg",
+    "/dist/icon-assets/HTML5.svg",
     "HTML5 logo",
     "HTML"
   ).card;
   const css = skillCard.cardFactory(
-    "/src/skills-section/assets/css.svg",
+    "/dist/icon-assets/css.svg",
     "CSS3 logo",
     "CSS"
   ).card;
   const webpack = skillCard.cardFactory(
-    "/src/skills-section/assets/webpack.svg",
+    "/dist/icon-assets/webpack.svg",
     "webpack logo",
     "Webpack"
   ).card;
   const nodejs = skillCard.cardFactory(
-    "/src/skills-section/assets/node-js.svg",
+    "/dist/icon-assets/node-js.svg",
     "NodeJS logo",
     "NodeJS"
   ).card;
   const typescript = skillCard.cardFactory(
-    "/src/skills-section/assets/typescript.svg",
+    "/dist/icon-assets/typescript.svg",
     "typescript logo",
     "Typescript"
   ).card;
   const python = skillCard.cardFactory(
-    "/src/skills-section/assets/python.svg",
+    "/dist/icon-assets/python.svg",
     "python logo",
     "Python"
   ).card;
   const django = skillCard.cardFactory(
-    "/src/skills-section/assets/django.svg",
+    "/dist/icon-assets/django.svg",
     "django logo",
     "Django"
   ).card;
   const java = skillCard.cardFactory(
-    "/src/skills-section/assets/java.svg",
+    "/dist/icon-assets/java.svg",
     "java logo",
     "Java"
   ).card;
   const vue = skillCard.cardFactory(
-    "/src/skills-section/assets/vue-9.svg",
+    "/dist/icon-assets/vue-9.svg",
     "VueJS logo",
     "Vue"
   ).card;
 
   const java2 = skillCard.cardFactory(
-    "/src/skills-section/assets/java.svg",
+    "/dist/icon-assets/java.svg",
     "java logo",
     "Java"
   ).card;
