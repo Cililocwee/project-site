@@ -1,5 +1,4 @@
 import css from "./style.css";
-import projectMenu from "./project-section/projectCarousel";
 import setupProjects from "./project-section/projectSetup";
 import setupSkills from "./skills-section/skillSetup";
 
@@ -37,9 +36,6 @@ returntotop.addEventListener("click", () => {
     .getElementById("introduction")
     .scrollIntoView({ behavior: "smooth" });
 });
-
-const intro = document.querySelector(".content");
-intro.appendChild(projectMenu.container);
 
 // ** Sets up the skills section
 setupSkills();

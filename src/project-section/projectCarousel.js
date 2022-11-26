@@ -1,10 +1,10 @@
 import "./projectMenu.css";
 
 const projectMenu = (function () {
-  //main container
+  //carousel wrapper
   const container = document.createElement("div");
   container.classList.add("container");
-  container.classList.add("project-list");
+  container.classList.add("project-carousel");
   // container.classList.add("hidden");
 
   const projectHeader = document.createElement("h1");
@@ -12,16 +12,17 @@ const projectMenu = (function () {
 
   container.append(projectHeader);
 
-  // large, main image
+  // active image div
   const mainImage = document.createElement("div");
   mainImage.classList.add("main-img");
 
-  const imageAlpha = document.createElement("img");
-  imageAlpha.src = "/src/project-section/assets/pokemongame.jpeg";
-  imageAlpha.id = "current";
-  imageAlpha.alt = "main image";
+  // default image on page render
+  const defaultImage = document.createElement("img");
+  defaultImage.src = "/src/project-section/assets/pokemongame.jpeg";
+  defaultImage.id = "current";
+  defaultImage.alt = "active project";
 
-  //buttons
+  // scroll buttons
   const buttonContainer = document.createElement("div");
   buttonContainer.classList.add("slide-buttons");
 
@@ -69,7 +70,7 @@ const projectMenu = (function () {
   );
 
   // building display
-  mainImage.append(imageAlpha);
+  mainImage.append(defaultImage);
   container.append(mainImage, buttonContainer, previews);
 
   // previews

@@ -16,12 +16,16 @@ const projectCard = (function (id, description, live, repo) {
     liveDiv.append(liveLink);
     liveLink.innerText = "Live";
     liveLink.href = live;
+    liveLink.target = "_blank";
+    liveLink.rel = "noopener noreferrer";
 
     const repoDiv = document.createElement("div");
     const repoLink = document.createElement("a");
     repoDiv.append(repoLink);
     repoLink.innerText = "Repo";
     repoLink.href = repo;
+    repoLink.target = "_blank";
+    repoLink.rel = "noopener noreferrer";
 
     links.append(liveDiv, repoDiv);
     descriptionLayer.append(links);
