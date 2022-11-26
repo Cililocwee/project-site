@@ -1,71 +1,61 @@
 import skillCard from "./skillCard";
-import jsLogo from "./icon-assets/javascript.svg";
+import jsIcon from "./icon-assets/javascript.svg";
+import cssIcon from "./icon-assets/css.svg";
+import djangoIcon from "./icon-assets/django.svg";
+import htmlIcon from "./icon-assets/HTML5.svg";
+import javaIcon from "./icon-assets/java.svg";
+import nodejsIcon from "./icon-assets/node-js.svg";
+import pythonIcon from "./icon-assets/python.svg";
+import reactIcon from "./icon-assets/reactjs.svg";
+import typescriptIcon from "./icon-assets/typescript.svg";
+import vueIcon from "./icon-assets/vue-9.svg";
+import webpackIcon from "./icon-assets/webpack.svg";
 
 export default function setupSkills() {
   // ** Skill cards
   // src alt label
 
   const javascript = skillCard.cardFactory(
-    jsLogo,
+    jsIcon,
     "javascript logo",
     "Javascript"
   ).card;
   const reactjs = skillCard.cardFactory(
-    "./icon-assets/reactjs.svg",
+    reactIcon,
     "reactjs logo",
     "React"
   ).card;
-  const html = skillCard.cardFactory(
-    "./icon-assets/HTML5.svg",
-    "HTML5 logo",
-    "HTML"
-  ).card;
-  const css = skillCard.cardFactory(
-    "./icon-assets/css.svg",
-    "CSS3 logo",
-    "CSS"
-  ).card;
+  const html = skillCard.cardFactory(htmlIcon, "HTML5 logo", "HTML").card;
+  const css = skillCard.cardFactory(cssIcon, "CSS3 logo", "CSS").card;
   const webpack = skillCard.cardFactory(
-    "./icon-assets/webpack.svg",
+    webpackIcon,
     "webpack logo",
     "Webpack"
   ).card;
   const nodejs = skillCard.cardFactory(
-    "./icon-assets/node-js.svg",
+    nodejsIcon,
     "NodeJS logo",
     "NodeJS"
   ).card;
   const typescript = skillCard.cardFactory(
-    "./icon-assets/typescript.svg",
+    typescriptIcon,
     "typescript logo",
     "Typescript"
   ).card;
   const python = skillCard.cardFactory(
-    "./icon-assets/python.svg",
+    pythonIcon,
     "python logo",
     "Python"
   ).card;
   const django = skillCard.cardFactory(
-    "./icon-assets/django.svg",
+    djangoIcon,
     "django logo",
     "Django"
   ).card;
-  const java = skillCard.cardFactory(
-    "./icon-assets/java.svg",
-    "java logo",
-    "Java"
-  ).card;
-  const vue = skillCard.cardFactory(
-    "./icon-assets/vue-9.svg",
-    "VueJS logo",
-    "Vue"
-  ).card;
+  const java = skillCard.cardFactory(javaIcon, "java logo", "Java").card;
+  const vue = skillCard.cardFactory(vueIcon, "VueJS logo", "Vue").card;
 
-  const java2 = skillCard.cardFactory(
-    "./icon-assets/java.svg",
-    "java logo",
-    "Java"
-  ).card;
+  const java2 = skillCard.cardFactory(javaIcon, "java logo", "Java").card;
 
   // ** categories of confidence
   const confident = document.getElementById("confident");
