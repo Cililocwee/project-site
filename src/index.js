@@ -1,4 +1,5 @@
 import css from "./style.css";
+import navbarCss from "./navBar.css";
 import setupProjects from "./project-section/projectSetup";
 import setupSkills from "./skills-section/skillSetup";
 
@@ -10,32 +11,47 @@ for (let i = 0; i < dropdownheaders.length; i++) {
   });
 }
 
-const aboutcut = document.querySelector(".aboutcut");
-aboutcut.addEventListener("click", () => {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-});
-
-const skillscut = document.querySelector(".skillscut");
-skillscut.addEventListener("click", () => {
-  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
-});
-
-const projectscut = document.querySelector(".projectscut");
-projectscut.addEventListener("click", () => {
-  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-});
-
-const contactcut = document.querySelector(".contactcut");
-contactcut.addEventListener("click", () => {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-});
-
-const returntotop = document.querySelector(".returntotop");
-returntotop.addEventListener("click", () => {
+const introductioncut = document.getElementById("introbtn");
+introductioncut.addEventListener("click", () => {
   document
     .getElementById("introduction")
-    .scrollIntoView({ behavior: "smooth" });
+    .scrollIntoView({ behavior: "smooth", block: "center" });
 });
+
+const aboutcut = document.getElementById("aboutbtn");
+aboutcut.addEventListener("click", () => {
+  document
+    .getElementById("about")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+const skillscut = document.getElementById("skillsbtn");
+skillscut.addEventListener("click", () => {
+  document
+    .getElementById("skills")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+const projectscut = document.getElementById("projectsbtn");
+projectscut.addEventListener("click", () => {
+  document
+    .getElementById("projects")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+const contactcut = document.getElementById("contactbtn");
+contactcut.addEventListener("click", () => {
+  document
+    .getElementById("contact")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+// const returntotop = document.querySelector(".returntotop");
+// returntotop.addEventListener("click", () => {
+//   document
+//     .getElementById("introduction")
+//     .scrollIntoView({ behavior: "smooth", block: "center" });
+// });
 
 // ** Sets up the skills section
 setupSkills();

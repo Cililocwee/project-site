@@ -8,12 +8,71 @@
   </head>
 
   <body>
-    <div class="content">
-      <div class="introduction container" id="introduction">
-        <div class="introblurb">
-          <h1>Corrie Stroup</h1>
-          <h3>Front-End Developer | Designer</h3>
-          <div class="logodivtop">
+    <header id="nav-wrapper">
+      <nav id="nav">
+        <div class="nav left">
+          <span id="profilename">Corrie Stroup</span>
+        </div>
+        <div class="nav right" id="nav-right">
+          <a id="introbtn" class="nav-link"
+            ><span class="nav-link-span"
+              ><span class="u-nav">Intro</span></span
+            ></a
+          >
+          <a id="aboutbtn" class="nav-link"
+            ><span class="nav-link-span"
+              ><span class="u-nav">About</span></span
+            ></a
+          >
+          <a id="skillsbtn" class="nav-link"
+            ><span class="nav-link-span"
+              ><span class="u-nav">Skills</span></span
+            ></a
+          >
+          <a id="projectsbtn" class="nav-link"
+            ><span class="nav-link-span"
+              ><span class="u-nav">Projects</span></span
+            ></a
+          >
+          <a id="contactbtn" class="nav-link"
+            ><span class="nav-link-span"
+              ><span class="u-nav">Contact</span></span
+            ></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <div class="content" id="content">
+      <div class="introduction-wrapper container" id="introduction">
+        <div class="introduction">
+          <div class="introblurb">
+            <h1>Corrie Stroup</h1>
+            <h3>Front-End Developer | Designer</h3>
+            <div class="logodivtop">
+              <a
+                href="https://www.linkedin.com/in/corriestroup/"
+                target="_blank"
+                ><img
+                  src="./assets/linkedin.svg"
+                  alt="Linkedin Logo and link to Linkedin profile"
+                  class="logo"
+              /></a>
+              <a href="https://www.github.com/cililocwee/" target="_blank"
+                ><img
+                  src="./assets/github.svg"
+                  alt="Github Logo and link to Github profile"
+                  class="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="portrait">
+            <img
+              src="./assets/portrait.jpeg"
+              alt="Picture of the ever-dutiful Corrie Stroup"
+            />
+          </div>
+          <div class="logodivbottom">
             <a href="https://www.linkedin.com/in/corriestroup/" target="_blank"
               ><img
                 src="./assets/linkedin.svg"
@@ -28,41 +87,12 @@
             /></a>
           </div>
         </div>
-        <div class="portrait">
-          <img
-            src="./assets/portrait.jpeg"
-            alt="Picture of the ever-dutiful Corrie Stroup"
-          />
-        </div>
-        <div class="logodivbottom">
-          <a href="https://www.linkedin.com/in/corriestroup/" target="_blank"
-            ><img
-              src="./assets/linkedin.svg"
-              alt="Linkedin Logo and link to Linkedin profile"
-              class="logo"
-          /></a>
-          <a href="https://www.github.com/cililocwee/" target="_blank"
-            ><img
-              src="./assets/github.svg"
-              alt="Github Logo and link to Github profile"
-              class="logo"
-          /></a>
-        </div>
-      </div>
 
-      <div class="tableofcontents container">
         <p>
-          Welcome, I'm Corrie Stroup, a Front-End Developer, born and raised in
+          Welcome! I'm Corrie Stroup, a Front-End Developer, born and raised in
           the Southern/Mid-Western US. I currently live in Vietnam with my
           lovely wife and three adorable (and frustrating) cats.
         </p>
-        <p>Click one of the buttons below to jump to the relevant section.</p>
-        <div class="tabcontainer">
-          <div class="aboutcut contenttab">About</div>
-          <div class="skillscut contenttab">Skills</div>
-          <div class="projectscut contenttab">Projects</div>
-          <div class="contactcut contenttab">Contact</div>
-        </div>
       </div>
 
       <div class="about container" id="about">
@@ -161,8 +191,6 @@
           >
         </div>
       </div>
-
-      <div class="returntotop">Back to top</div>
     </div>
 
     <script src="bundle.js"></script>
