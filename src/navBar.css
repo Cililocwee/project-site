@@ -108,14 +108,12 @@ a:active,
 a:hover,
 a:visited {
   text-decoration: none;
-  color: var(--primary);
 }
 
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--font-on-background);
 }
 
 a:hover {
