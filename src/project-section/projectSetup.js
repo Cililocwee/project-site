@@ -38,8 +38,22 @@ export default function setupProjects() {
     "https://github.com/Cililocwee/memory-game/"
   ).card;
 
+  const projectGamma = projectCard.cardFactory(
+    "projectgamma",
+    `A storefront using React with Router. Has persistent cart across pages using React's Context API.`,
+    "https://cililocwee.github.io/store-front/",
+    "https://github.com/Cililocwee/store-front/"
+  ).card;
+
   // ** Project list
   const projectlist = document.getElementById("projectlist");
 
-  projectlist.append(projectAlpha, projectBeta, projectA, projectB, projectC);
+  projectlist.append(
+    projectAlpha,
+    projectBeta,
+    projectA,
+    projectB,
+    projectC,
+    projectGamma
+  );
 }

@@ -46,13 +46,6 @@ contactcut.addEventListener("click", () => {
     .scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-// const returntotop = document.querySelector(".returntotop");
-// returntotop.addEventListener("click", () => {
-//   document
-//     .getElementById("introduction")
-//     .scrollIntoView({ behavior: "smooth", block: "center" });
-// });
-
 // ** Sets up the skills section
 setupSkills();
 

@@ -434,6 +434,10 @@ footer {
   background-image: url(/src/project-section/assets/pokemongame.jpeg);
 }
 
+#projectgamma {
+  background-image: url(/src/project-section/assets/storefront.jpeg);
+}
+
 .linkbuttons {
   display: flex;
   justify-content: space-around;
