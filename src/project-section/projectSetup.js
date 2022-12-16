@@ -49,11 +49,11 @@ export default function setupProjects() {
   const projectlist = document.getElementById("projectlist");
 
   projectlist.append(
+    projectGamma,
     projectAlpha,
     projectBeta,
     projectA,
     projectB,
-    projectC,
-    projectGamma
+    projectC
   );
 }
